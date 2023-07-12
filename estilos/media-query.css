@@ -34,6 +34,13 @@
     }
 }
 
+@media screen and (min-width: 768px) and (orientation: landscape){
+    section#login{
+        width: 80vw;
+        max-height: 80vh;
+    }
+}
+
 @media screen and (min-width: 992px){
     body{
         background-image: linear-gradient(to top, #49a049, #5f2c82);
@@ -55,3 +62,4 @@
         width: 50%;
     }
 }
+
