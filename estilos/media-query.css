@@ -14,6 +14,10 @@
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
 
+    main{
+        height: 100vh;
+    }
+
     section#login{
         width: 80vw;
     }

@@ -35,7 +35,7 @@ section#login{
     top: 50%;
     transform: translate(-50%, -50%);
     transition: width .3s, height .3s;
-    transition-timing-function: ;
+    transition-timing-function: ease;
     width: 250px;
 }
 
