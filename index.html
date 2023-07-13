@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
     <title>Login</title>
@@ -19,16 +20,21 @@
 
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
 
-                <form method="post" action="login.php">
+                <form method="post" action="login.php" autocomplete="on">
                     <div class="campo">
-                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail">
+                        <span class="material-symbols-outlined icon">person</span>
+                        <input type="email" name="login" id="ilogin" placeholder="Seu e-mail" autocomplete="email" required maxlength="30" minlength="8">
                         <label for="ilogin">Login</label>
                     </div>
 
                     <div class="campo">
-                        <input type="password" name="senha" id="isenha" placeholder="Sua senha">
+                        <span class="material-symbols-outlined icon">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" maxlength="20" minlength="8" required>
                         <label for="isenha">Senha</label>
                     </div>
+
+                        <input type="submit" value="Enviar">
+                        <a href="esqueci.html">Esqueci a senha</a><span class="material-symbols-outlined mail">mail</span>
                 </form>
             </div>
         </section>
