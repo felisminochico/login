@@ -28,7 +28,7 @@ section#login{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    height: 500px;
+    height: 510px;
     left: 50%;
     overflow: hidden;
     position: absolute;
@@ -56,8 +56,19 @@ section#login > div#formulario > h1{
     text-align: center;
 }
 
-section#login > div#formulario > p{
+section#login > div#formulario > p, label{
     font-size: 0.8em;
+}
+
+div.campo{
+    background-color: #5f2c82;
+    border-radius: 5px;
+    height: 40px;
+    margin: 5px 0px;
+}
+
+form > div.campo > label{
+    display: none;
 }
 
 .icon{
@@ -66,4 +77,44 @@ section#login > div#formulario > p{
 
 .mail{
     color: blue;
+}
+
+form > [type=submit]{
+    background-color: #49a09d;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 1em;
+    height: 40px;
+    width: 100%;
+}
+
+form > input[type=submit]:hover{
+background-color: #285755;
+}
+
+form > a.botao{
+    background-color: white;
+    border: 1px solid #285755;
+    border-radius: 5px;
+    color: #285755;
+    display: block;
+    font-size: 1em;
+    height: 40px;
+    margin-top: 10px;
+    padding-top: 7px;
+    text-align: center;
+    text-decoration: none;
+}
+
+form > a.botao:hover{
+    background-color: #71f5ee;
+    color: #285755;
+}
+
+form > a.botao > span{
+    color: #285755;
+    font-size: 1.1em;
 }
