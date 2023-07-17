@@ -19,6 +19,7 @@
     }
 
     section#login{
+        height: 350px;
         width: 80vw;
     }
 
@@ -39,15 +40,14 @@
 
     section#login > div#formulario > p{
         font-size: 1.1em;
+        line-height: normal;
+    }
+
+    .icon{
+        transform: translateX(50%);
     }
 }
 
-@media screen and (min-width: 768px) and (orientation: landscape){
-    section#login{
-        width: 80vw;
-        height: 80vh;
-    }
-}
 
 @media screen and (min-width: 992px){
     body{
@@ -55,6 +55,7 @@
     }
 
     section#login{
+        height: 390px;
         width: 900px;
     }
 
@@ -76,6 +77,10 @@
 
     section#login > div#formulario > p{
         font-size: 1.2em;
+    }
+
+    .icon{
+        transform: translateX(50%);
     }
 }
 

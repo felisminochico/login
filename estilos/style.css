@@ -28,7 +28,7 @@ section#login{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    height: 510px;
+    height: 530px;
     left: 50%;
     overflow: hidden;
     position: absolute;
@@ -56,23 +56,52 @@ section#login > div#formulario > h1{
     text-align: center;
 }
 
+section#login > div#formulario > p{
+    line-height: 1.6em;
+    margin-bottom: 15px;
+}
+
 section#login > div#formulario > p, label{
     font-size: 0.8em;
 }
 
 div.campo{
     background-color: #5f2c82;
-    border-radius: 5px;
+    border-radius: 8px;
     height: 40px;
     margin: 5px 0px;
+    position: relative;
 }
 
 form > div.campo > label{
     display: none;
 }
 
+form > div.campo > input[type=email], input[type=password]{
+    background-color: #32faf3;
+    border-radius: 8px;
+    height: 40px;
+    left: 19%;
+    padding: 3px;
+    position: absolute;
+    width: calc(100% - 19%);
+    
+}
+
+form > div.campo > input[type=email]:focus-within, input[type=password]:focus-within{
+    background-color: rgb(255, 255, 255);
+}
+
+::placeholder{
+    color: black;
+}
+
 .icon{
-    font-weight: bold;
+    color: white;
+    font-size: 2em;
+    font-weight: normal;
+    padding: 5px;
+    
 }
 
 .mail{
